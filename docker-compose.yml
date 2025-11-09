@@ -1,0 +1,11 @@
+services:
+ web:
+  container_name: reactjs-sandbox
+  #image: anawalinski/reactjs-sandbox
+  build: .
+  restart: unless-stopped
+  volumes:
+    - "${WEB_DIR}:/opt/project"
+  ports:
+    - "${WEB_PORT}:3000"
+ 
