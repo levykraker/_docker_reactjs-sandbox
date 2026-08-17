@@ -3,6 +3,7 @@ WORKDIR /opt/project
 
 # Install the application dependencies
 RUN apk add --update nodejs npm
+RUN apk add --update ffmpeg
 RUN npm i -g npx
 
 # Expose port 3000 
